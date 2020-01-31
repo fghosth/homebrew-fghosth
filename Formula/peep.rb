@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class peep < Formula
+class Peep < Formula
   desc ""
   homepage ""
   url "https://github.com/fghosth/goProject/releases/download/v1.0/peep.tar.gz"
