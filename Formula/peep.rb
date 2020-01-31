@@ -12,7 +12,7 @@ class Peep < Formula
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
-    bin.install "hello"
+    bin.install "peep"
     # system "cmake", ".", *std_cmake_args
   end
 
