@@ -5,7 +5,7 @@ class Peep < Formula
   desc ""
   homepage ""
   url "https://github.com/fghosth/peep/releases/download/v1.0/peep.tar.gz"
-  sha256 "6aa2c3fb7872ea192a448c756ba2d7c1a96ecd16af333b43f25f1c56a19348f3"
+  sha256 "733e4544ab6d05dbe4aaff6030b8ec91f15e204b7f6839b931f6bf889f41ff1f"
 
   # depends_on "cmake" => :build
 
