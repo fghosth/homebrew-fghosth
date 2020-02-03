@@ -4,8 +4,8 @@
 class Lile < Formula
   desc "create grpc lib"
   homepage "https://github.com/fghosth/lile"
-  url "https://github.com/fghosth/lile/releases/download/v1.0.0/lile_mac.tgz"
-  sha256 "3ce99eb24782a823c678d5d04c3aa70bc52b56ab121c51778d225ef8f8969189"
+  url "https://github.com/fghosth/lile/releases/download/v1.0.1/lile.tar.gz"
+  sha256 "f551c2812b2cd2c73c18b0eb41deaff504852592a6023f8c9b99b1a82bfe531f"
 
   # depends_on "cmake" => :build
 
