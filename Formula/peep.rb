@@ -4,16 +4,18 @@
 class Peep < Formula
   desc ""
   homepage ""
-  url "https://github.com/fghosth/peep/releases/download/v1.0.5/peep.tar.gz"
-  sha256 "23ab855493978d0c77a56ecba289de2eab77f8ced4cf4d835a6fb0a4fc520bd7"
+  url "https://github.com/fghosth/peep/releases/download/v1.0.32/peep.tar.gz"
+  sha256 "f5cf2266b0f8033cc0cdd4fd07c8cd702811a106fe143a23814db9eafa762f23"
+  license ""
 
   # depends_on "cmake" => :build
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
-    bin.install "peep"
-    # system "cmake", ".", *std_cmake_args
+    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
+    system "./configure", *std_configure_args, "--disable-silent-rules"
+    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
 
   test do
@@ -21,7 +23,7 @@ class Peep < Formula
     #
     # This test will fail and we won't accept that! For Homebrew/homebrew-core
     # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test goProject`. Options passed
+    # software. Run the test with `brew test peep`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
     # The installed folder is not in the path, so use the entire path to any
